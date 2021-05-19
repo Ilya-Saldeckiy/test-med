@@ -1,0 +1,847 @@
+/* Общие стили */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700;900&display=swap');
+
+html{
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after{
+	box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+li{
+    margin: 0;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+	font-size: 17px;
+	font-weight: 300;
+    line-height: 24px;
+}
+
+a{
+    text-decoration: none;
+    color: #000000;
+}
+
+img{
+	max-width: 100%;
+}
+
+.list-reset{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.container{
+    position: relative;
+    margin: 0 auto;
+    width: 1280px;
+    padding: 0;
+}
+
+.main-caption{
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 900;
+    color: #000000;
+}
+
+.btn{
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+/* Стили шапки */
+
+.menu__section{
+    background-color: #ededed;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.nav__menu{
+    display: flex;
+}
+
+.list__menu{
+    display: flex;
+    margin-right: auto;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 300;
+    color: #000000;
+}
+
+.burger{
+    display: none;
+}
+
+.menu__item:not(:last-child){
+    margin-right: 30px;
+}
+
+.menu__item,.header__btn{
+    transition: transform .3s ease-in-out;
+}
+
+.menu__item:hover,.header__btn:hover{
+    transform: scale(1.1);
+}
+
+.header__btn{
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: 300;
+    color: #000000;
+}
+
+.admin__btn{
+    margin-right: 48px;
+    padding-left: 20px;
+    background: url('../img/admin.png') no-repeat;
+    background-size: 12px;
+    background-position: 0% 50%;
+}
+
+.exit__btn{
+    padding-left: 20px;
+    background: url('../img/exit_btn.png') no-repeat;
+    background-size: 12px;
+    background-position: 0% 50%;
+}
+
+.botoom__menu-position{
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    margin-right: auto;
+}
+
+.bottom__menu-name{
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.bottom__menu{
+    padding-top: 26px;
+    padding-bottom: 19px;
+    background-color: #fff;
+    box-shadow: 2px 4px 20px 0px rgba(0,0,0,0.1);
+    margin-bottom: 40px;
+}
+
+.caption__hidden{
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border:  0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+}
+
+.mobile__name{
+    display: none;
+}
+
+
+/* Стили основного контента */
+
+.main__page{
+    display: flex;
+}
+
+.left__column{
+    width: 280px;
+    margin-right: 50px;
+}
+
+.filter__caption-position{
+    width: 100%;
+    padding-left: 30px;
+    background-color: #7cb47a;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: 900;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.journal__caption-position{
+    width: 100%;
+    padding-left: 30px;
+    background-color: #7cb47a;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: 900;
+    color: #ffffff;
+}
+
+.filter{
+    background: url('../img/person-2.png') no-repeat;
+    background-position: 95% 40%;
+}
+
+.filter__btn-position{
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+    z-index: 10;
+    margin-bottom: 31px;
+}
+
+.filter__btn{
+    background-color: unset;
+    display: block;
+    transition: font-weight .3s ease-in-out;
+}
+
+.filter__btn:hover{
+    font-weight: 600;
+}
+
+.filter__btn:not(:last-child){
+    margin-bottom: 30px;
+}
+
+.filter__btn-mrt{
+    background: url('../img/mrt.png') no-repeat;
+    padding-left: 35px;
+}
+
+.filter__btn-kt{
+    background: url('../img/kt.png') no-repeat;
+    padding-left: 35px;
+}
+
+.filter__btn-rengen{
+    background: url('../img//rengen.png') no-repeat;
+    padding-left: 35px;
+}
+
+.filter__yzi{
+    background: url('../img/yzi.png') no-repeat;
+    padding-left: 35px;
+}
+
+.filter__btn-fd{
+    background: url('../img/fd.png') no-repeat;
+    padding-left: 35px;
+}
+
+.filter__btn-kons{
+    background: url('../img/kon.png') no-repeat;
+    padding-left: 35px;
+}
+
+.filter__btn-analiz{
+    background: url('../img/analiz.png') no-repeat;
+    padding-left: 35px;
+}
+
+.colb__img{
+    width: 20px;
+    height: 29px;
+    display: block;
+    transition: transform .3s ease-in-out;
+}
+
+.colb__img-1{
+    background: url('../img/colb_1.png') 50% no-repeat;
+}
+
+.colb__img-2{
+    background: url('../img/colb_2.png') 50% no-repeat;
+}
+
+.colb__img-3{
+    background: url('../img/colb_3.png') 50% no-repeat;
+}
+
+.colb__img-4{
+    background: url('../img/colb_4.png') 50% no-repeat;
+}
+
+.colb__img-5{
+    background: url('../img/colb_5.png') 50% no-repeat;
+}
+
+.colb__img-6{
+    background: url('../img/colb_6.png') 50% no-repeat;
+}
+
+.colb__img:hover{
+    transform: scale(1.15);
+}
+
+.colb__position{
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 31px;
+}
+
+.colb__img:not(:last-child){
+    margin-right: 22px;
+}
+
+.open__more-btn{
+    width: 100%;
+    height: 30px;
+    background: url('../img/burger.svg') no-repeat;
+    background-position: 95% 50%;
+    background-color: #7cb47a;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 300;
+    color: #fffefe;
+    padding-left: 11px;
+    padding-right: 10px;
+    text-align: left;
+    transition: opacity .3s ease-in-out;
+}
+
+.open__more-btn:hover{
+    opacity: 0.85;
+}
+
+.filter__btn-more__position{
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-bottom: 75px;
+}
+
+.jurnal__item{
+    padding-left: 30px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-right: 30px;
+    width: 100%;
+}
+
+.jurnal__item:nth-child(even){
+    background-color: #ededed;
+}
+
+.jurnal__puplish-date{
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 300;
+    color: #8c8c8c;
+    margin-bottom: 8px;
+}
+
+.jurnal__nametag{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 14px;
+    color: #000000;
+}
+
+.right__column{
+    width: 100%;
+}
+
+.banner{
+    width: 100%;
+    padding-top: 76px;
+    padding-left: 40px;
+    padding-bottom: 62px;
+    margin-bottom: 33px;
+    background: url('../img/banner.png') no-repeat;
+}
+
+.banner__caption{
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 900;
+    color: #000000;
+    margin-bottom: 27px;
+    width: 370px;
+}
+
+.banner__text{
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 300;
+    color: #000000;
+    width: 420px;
+}
+
+.opportunities__caption{
+    margin-bottom: 33px;
+}
+
+.card__position{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.card{
+    display: flex;
+    align-items: center;
+    width: 460px;
+    margin-right: auto;
+}
+
+.card:nth-child(-n + 2){
+    margin-bottom: 40px;
+}
+
+.card__block-image{
+    width: 140px;
+    height: 140px;
+    background-color: #ededed;
+    margin-right: 30px;
+}
+
+.block__card-image-1{
+    background: url('../img/card_1.png') 50% no-repeat;
+    background-color: #7cb47a;
+}
+
+.block__card-image-2{
+    background: url('../img/card_2.png') 50% no-repeat;
+    background-color: #ededed;
+}
+
+.block__card-image-3{
+    background: url('../img/card_3.png') 50% no-repeat;
+    background-color: #ededed;
+}
+
+.block__card-image-4{
+    background: url('../img/card__4.png') 55% 50% no-repeat;
+    background-color: #7cb47a;
+    background-size: 38px 50px;
+}
+
+.card__text{
+    width: 280px;
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #000000;
+}
+
+.manual__card{
+    display: flex;
+    align-items: center;
+}
+
+.text__manual-position{
+    display: flex;
+    align-items: center;
+    width: 430px;
+    margin-right: auto;
+}
+
+.manual__caption{
+    margin-bottom: 52px;
+}
+
+.manual__number{
+    opacity: 0.1;
+    font-family: Roboto;
+    font-size: 120px;
+    line-height: 87px;
+    font-weight: 900;
+    letter-spacing: -0.04em;
+    color: #000000;
+}
+
+.manual__text-caption{
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 21px;
+}
+
+.manual-1{
+    margin-bottom: 25px;
+}
+
+.manual__text-block{
+    margin-right: auto;
+}
+
+.image__manual-2{
+    margin-right: auto;
+}
+
+.text-block-2{
+    margin-right: 0;
+}
+
+.manual__text-caption-2{
+    margin-right: 15px;
+}
+
+.manual__card-2{
+    margin-bottom: 36px;
+}
+
+.manual__card-1,.image__manual-2{
+    position: relative;
+}
+
+.manual__card-1::before{
+    content: "01";
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border-radius: 100%;
+    text-align: center;
+    padding-top: 4px;
+    position: absolute;
+    top: 30px;
+    left: 53px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.image__manual-2::before{
+    content: "02";
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border-radius: 100%;
+    text-align: center;
+    padding-top: 4px;
+    position: absolute;
+    top: 55px;
+    right: 25px;
+    font-size: 14px;
+    color: #fff;
+}
+
+
+
+
+/* Стили footer */
+
+
+.footer{
+    background-color: #7cb47a;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+.text__footer-position{
+    display: flex;
+    justify-content: space-between;
+}
+
+.scroll__to__up{
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 300;
+    color: #ffffff;
+    position: relative;
+    padding-right: 15px;
+    transition: transform .3s ease-in-out;
+}
+
+.scroll__to__up:hover{
+    transform: rotate(360deg);
+}
+
+.scroll__to__up::after{
+    content: "";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    background: url('../img/arrow.png') 50% no-repeat;
+    right: 0px;
+    top: 5px;
+}
+
+.footer__copirate{
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 300;
+    color: #ffffff;
+}
+
+
+/* Адаптив */
+@media (max-width: 1320px){
+    .container{
+        width: 968px;
+    }
+
+    .main__page {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left__column {
+        width: 100%;
+        margin-right: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .banner{
+        margin-top: 30px;
+    }
+
+    .filter__btn-more__position{
+        margin-bottom: 0;
+    }
+
+    .journal{
+        width: 100%;
+    }
+
+    .open__more-btn{
+        width: 280px;
+    }
+}
+
+@media (max-width: 1023px){
+    .container{
+        width: 100%;
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+
+    .card{
+        width: 100%;
+    }
+
+    .card:not(:last-child){
+        margin-bottom: 20px;
+    }
+
+    .manual__card-1, .image__manual-2 {
+        position: relative;
+        max-width: 400px;
+        width: 100%;
+    }
+
+    .footer {
+        background-color: #7cb47a;
+        padding-right: 16px;
+        padding-left: 16px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+
+@media (max-width: 768px){
+    .main__page {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .left__column{
+        display: block;
+    }
+    
+    .open__more-btn {
+        width: 100%;
+    }
+
+    .filter{
+        margin-bottom: 30px;
+    }
+
+    .journal{
+        margin-bottom: 40px;
+    }
+
+    .card__text{
+        font-size: 16px;
+    }
+
+    .manual__number {
+        opacity: 0.1;
+        font-family: Roboto;
+        font-size: 100px;
+        line-height: 87px;
+        font-weight: 900;
+        letter-spacing: -0.04em;
+        color: #000000;
+    }
+
+    .manual-1{
+        display: block;
+    }
+
+    .text__manual-position{
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    .manual__text-caption{
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    .manual__text{
+        font-size: 16px;
+    }
+
+    .manual__card-1, .image__manual-2{
+        margin: 0 auto;
+    }
+
+    .manual__card-2 {
+        margin-bottom: 25px;
+        flex-direction: column-reverse;
+    }
+
+    .image__manual-2::before,.manual__card-1::before{
+        top: 15px;
+        left: 30px;
+    }
+
+    .burger{
+        display: block;
+        margin-left: 20px;
+        width: 20px;
+        height: 20px;
+        background: url('../img/mobile__burger.png') 50% no-repeat;
+        background-size: 20px;
+
+    }
+
+    .menu__section {
+        background-color: #fff;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        position: absolute;
+        width: 250px;
+        top: 78px;
+        right: 0;
+        z-index: 99;
+        display: none;
+    }
+
+    .nav__menu,.list__menu {
+        display: block;
+    }
+
+    .logo{
+        width: 142px;
+    }
+
+    .banner__caption {
+        font-size: 31px;
+        width: 100%;
+    }
+
+    .banner__text {
+        font-size: 16px;
+        line-height: 24px;
+        width: 100%;
+    }
+
+    .bottom__menu-name{
+        font-size: 14px;
+    }
+
+    .mobile__name{
+        display: block;
+    }
+
+    .bottom__menu-name{
+        display: none;
+    }
+
+    .mobile__name .bottom__menu-name{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    .burger__active{
+        display: block;
+    }
+
+    .banner{
+        padding-top: 16px;
+        padding-bottom: 60px;
+        padding-left: 0;
+        background-size: cover;
+    }
+
+    .text__manual-position{
+        display: block;
+        width: 100%;
+    }
+
+    .card{
+        display: block;
+    }
+
+    .card__block-image{
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .card__text{
+        width: 100%;
+        text-align: center;
+    }
+
+    .text-block-2 {
+        margin-right: 0;
+        text-align: right;
+    }
+
+    .colb__img:not(:last-child) {
+        margin-right: 6px;
+    }
+
+    .filter__btn-position,.colb__position{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .main-caption {
+        font-size: 21px;
+        line-height: 25px;
+        font-weight: 900;
+        color: #000000;
+    }
+
+    .banner__caption {
+        font-size: 20px;
+        line-height: 25px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .banner__text{
+        text-align: center;
+    }
+}

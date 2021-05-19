@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="анализы, медицинские исследования">
+    <meta name="description" content="Анализы в городах России">
+    <title>Атлас пациента</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <script src="js/jquery.js"></script>
+</head>
+<body>
+    <header>
+        <section class="menu__section" id="header">
+            <div class="container">
+                <nav class="nav__menu">
+                    <h1 class="caption__hidden">Атлас пациента</h1>
+                    <ul class="list-reset list__menu">
+                        <li class="menu__item mobile__name"><p class="bottom__menu-name">Тестов Иван Иванович</p></li>
+                        <li class="menu__item"><a href="#">Главная</a></li>
+                        <li class="menu__item"><a href="#">Обследование и анализы</a></li>
+                        <li class="menu__item"><a href="#">Запись онлайн</a></li>
+                    </ul>
+                    <button class="btn header__btn admin__btn" id="admin__btn" type="button">Личные данные</button>
+                    <button class="btn header__btn exit__btn" type="button">Выход</button>
+                </nav>
+            </div>
+        </section>
+        <section class="bottom__menu">
+            <div class="container botoom__menu-position">
+                <a href="#" class="logo">
+                    <img src="img/logo.png" alt="logo">
+                </a>
+                <p class="bottom__menu-name">Тестов Иван Иванович</p>
+                <button class="btn burger"></button>
+            </div>
+        </section>
+    </header>
+        <main>
+            <div class="container main__page">
+                <div class="left__column">
+                    <div class="filter">
+                        <p class="filter__caption-position">Фильтры иследований</p>
+                        <div class="filter__btn-position">
+                            <button class="btn filter__btn filter__btn-mrt" type="button">МРТ</button>
+                            <button class="btn filter__btn filter__btn-kt" type="button">КТ</button>
+                            <button class="btn filter__btn filter__btn-rengen" type="button">Рентген</button>
+                            <button class="btn filter__btn filter__yzi" type="button">УЗИ</button>
+                            <button class="btn filter__btn filter__btn-fd" type="button">ФД</button>
+                            <button class="btn filter__btn filter__btn-kons" type="button">Конс</button>
+                            <button class="btn filter__btn filter__btn-analiz" type="button">Анализы</button>
+                        </div> 
+                        <div class="colb__position">
+                            <button class="btn colb__img colb__img-1"></button>
+                            <button class="btn colb__img colb__img-2"></button>
+                            <button class="btn colb__img colb__img-3"></button>
+                            <button class="btn colb__img colb__img-4"></button>
+                            <button class="btn colb__img colb__img-5"></button>
+                            <button class="btn colb__img colb__img-6"></button>
+                        </div>
+                        <div class="filter__btn-more__position">
+                            <button class="btn open__more-btn">Показать все исследования</button>
+                        </div>
+                    </div>
+                    <div class="journal">
+                        <p class="journal__caption-position">Журнал исследований</p>
+                        <div class="jurnal__item">
+                            <p class="jurnal__puplish-date">07.12.2016 13:06</p>
+                            <p class="jurnal__nametag">МРТ Стопа</p>
+                        </div>
+                        <div class="jurnal__item">
+                            <p class="jurnal__puplish-date">26.09.2017 17:06</p>
+                            <p class="jurnal__nametag">Электронейромиография (ЭНМГ)</p>
+                        </div>
+                        <div class="jurnal__item">
+                            <p class="jurnal__puplish-date">07.12.2016 13:06</p>
+                            <p class="jurnal__nametag">МРТ Шейный отдел позвоночни...</p>
+                        </div>
+                        <div class="jurnal__item">
+                            <p class="jurnal__puplish-date">26.09.2017 17:06 ФД</p>
+                            <p class="jurnal__nametag">Электронейромиография...</p>
+                        </div>
+                        <div class="jurnal__item">
+                            <p class="jurnal__puplish-date">07.12.2016   l   13:06</p>
+                            <p class="jurnal__nametag">МРТ Стопа</p>
+                        </div>
+                        <div class="jurnal__item">
+                            <p class="jurnal__puplish-date">26.09.2017 17:06 ФД</p>
+                            <p class="jurnal__nametag">Электронейромиография...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="right__column">
+                    <div class="banner">
+                        <h2 class="banner__caption">Добро пожаловать в&nbsp;атлас пациента</h2>
+                        <p class="banner__text">Ознакомьтесь с&nbsp;краткой инструкцией и&nbsp;возможностями сервиса «Атлас Пациент».</p>
+                    </div>
+                    <h2 class="main-caption opportunities__caption">Возможноти атлас пациента</h2>
+                    <div class="card__position">
+                        <div class="card">
+                            <div class="card__block-image block__card-image-1"></div>
+                            <div>
+                                <p class="card__text">В атласе пациента можно посмотреть все заключения по всем исследованиям</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__block-image block__card-image-2"></div>
+                            <div>
+                                <p class="card__text">Из атласа пациента можно распечатать любое заключение</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__block-image block__card-image-3"></div>
+                            <div>
+                                <p class="card__text">Наглядное представление динамики измерений по каждому показателю</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card__block-image block__card-image-4"></div>
+                            <div>
+                                <p class="card__text">Атлас пациента позволяет посмотреть результаты исследований удаленно</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="manual">
+                        <div class="manual__card manual-1">
+                            <div class="manual__text-block">
+                                <div>
+                                    <h2 class="main-caption manual__caption">Инструкция</h2>
+                                </div>
+                                <div class="text__manual-position">
+                                    <div>
+                                        <p class="manual__number">01</p>
+                                    </div>
+                                    <div>
+                                        <h3 class="manual__text-caption">Навигация по исследованиям</h3>
+                                        <p class="manual__text">Для ознакомления с исследованием выберите один из разделов в меню</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="manual__image-block manual__card-1">
+                                <img src="img/manual__img-1.png" alt="инструкция">
+                            </div>
+                        </div>
+                        <div class="manual__card manual__card-2">
+                            <div class="manual__image-block image__manual-2">
+                                <img src="img/manual__image_2.png" alt="инструкция">
+                            </div>
+                            <div class="manual__text-block text-block-2">
+                                <div class="text__manual-position">
+                                    <div>
+                                        <p class="manual__number manual__text-caption-2">02</p>
+                                    </div>
+                                    <div>
+                                        <h3 class="manual__text-caption">Динамика измерений</h3>
+                                        <p class="manual__text">Для просмотра динамики иследований нажмите на кнопку</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="container text__footer-position">
+                <p class="footer__copirate">© 2018 Atlas Patient</p>
+                <a href="#header" class="scroll__to__up">На верх</a>
+            </div>
+        </footer>
+        <div class="modal" id="modal-1">
+            <div class="modal__content">
+                <!-- Контент модального окна -->
+                <button class="btn popup-close"></button>
+                <div class="modal__caption-position">
+                    <h3 class="modal__caption">Личные данные</h3>
+                </div>
+                <div class="modal__body">
+                    <form action="#" class="form">
+                        <input type="text" placeholder="ФИО" name="name" data-validate-field="name" class="form__input" required>
+                        <input  data-validate-field="tel" name="tel" type="tel" placeholder="Телефон" class="form__input" required>
+                        <input data-validate-field="mail" name="mail" type="email" placeholder="Почта" class="form__input" required>
+                        <div>
+                            <input data-validate-field="password" name="password" type="password" placeholder="Пароль" class="form__input password__input" id="password" required>
+                            <button class="btn password__btn" type="button" value="myPassword" onclick="if (password.type == 'text') password.type = 'password'; else password.type = 'text';">Показать пароль</button>
+                        </div>
+                        <div>
+                            <input type="password" name="confirm-password" placeholder="Подтвержение пароля" class="form__input password__input" id="password2" required>
+                            <button class="btn password__btn" type="button" onclick="if (password2.type == 'text') password2.type = 'password'; else password2.type = 'text';">Показать пароль</button>
+                        </div>
+                        <button class="btn form__btn" type="submit" onclick="srav()">Сохранить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script src="js/just-validate.min.js"></script>
+        <script src="js/inputmask.min.js"></script>
+        <script src="js/main.js"></script>
+</body>
+</html>

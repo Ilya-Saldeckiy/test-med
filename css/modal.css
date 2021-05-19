@@ -1,0 +1,126 @@
+.modal {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    top: -1000px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow-y: auto;
+    padding: 73px 0px;
+}
+
+.modal_active {
+    position: fixed;
+    top: 0;
+    visibility: visible;
+    opacity: 1;
+    transition: .3s;
+}
+
+.modal__content{
+    background-color: #fff;
+    position: relative;
+    padding: 36px 40px 40px;
+    max-width: 650px;
+    width: 100%;
+}
+
+.popup-close {
+	position: absolute;
+	top: 25px;
+	right: 25px;
+    background: url('../img/close.png') center no-repeat;
+    background-color: none;
+    width: 20px;
+    height: 20px;
+    border: none;
+    background-size: 20px;
+}
+
+.hidden {
+    overflow: hidden;
+}
+
+.modal__caption{
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 0 16px;
+    color: #7cb47a;
+}
+
+.modal__caption-position{
+    margin-bottom: 15px;
+}
+
+.form__input{
+    display: block;
+    width: 100%;
+    background-color: unset;
+    height: 48px;
+    border: 1px solid #7cb47a;
+    padding-left: 16px;
+    padding-right: 16px;
+    outline: none;
+}
+
+.form__input::placeholder{
+    font-size: 16px;
+    font-weight: 300;
+    color: #7cb47a;
+}
+
+.form__input:not(:last-child){
+    margin-bottom: 20px;
+}
+
+.form__btn{
+    background-color: #7cb47a;
+    color: #fff;
+    font-size: 16px;
+    width: 200px;
+    height: 40px;
+}
+
+.form div{
+    position: relative;
+}
+
+.password__btn{
+    position: absolute;
+    top: 16px;
+    right: 0;
+    background-color: unset;
+    font-size: 12px;
+    color: #7cb47a;
+}
+
+.password__input{
+    padding-right: 105px;
+}
+
+.js-validate-error-label{
+    top: -23px;
+}
+
+@media (max-width: 768px){
+
+    .form__input{
+        font-size: 14px;
+    }
+    
+    .form__input::placeholder{
+        font-size: 14px;
+    }
+
+    .modal__content{
+        max-width: 100%;
+    }
+
+
+}
